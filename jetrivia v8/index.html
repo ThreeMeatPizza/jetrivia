@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Trivia Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="question-number">Question 1</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+    
+    <main>
+        <div class="grid-container">
+            <button class="answer-button a" onclick="selectAnswer('A')">A</button>
+            <button class="answer-button b" onclick="selectAnswer('B')">B</button>
+            <button class="answer-button c" onclick="selectAnswer('C')">C</button>
+            <button class="answer-button d" onclick="selectAnswer('D')">D</button>
+        </div>
+        <button class="next-button" id="next-button" onclick="nextQuestion()" disabled>
+            <img src="arrow.png" alt="Next">
+        </button>
+    </main>
+
+    <footer>
+        <div id="result"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
